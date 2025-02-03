@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #898bf3, #5f8fe8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #171717;
+    text-align: center;
+    margin-bottom: 10px;
+    transform: translate(-50%,-50%);
+    top: 5%;
+    position: absolute;
+    left: 50%;
+    text-decoration: underline;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 400px;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    position: absolute;
+    left: 50%;
+    font-family: "Montserrat";
+}
+
+#calculator {
+    width: 300px;
+    background-color: #8ea1f8;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 8px rgba(0, 0, 0, 0.19);
+    padding: 20px;
+
+}
+
+#result {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #898bf3;
+    text-align: right;
+    font-size: 1.5rem;
+    min-height: 60px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.number {
+    background-color: #ffffff;
+}
+
+.operator {
+    background-color: rgba(2, 7, 110, 0.899);
+    color: white;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+    #calculator {
+        width: 200px;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
